@@ -1,0 +1,6 @@
+
+if(test-path "C:\Program Files\WindowsPowerShell\Modules\PSWindowsUpdate") {
+  write-host "Error - C:\Program Files\WindowsPowerShell\Modules\PSWindowsUpdate already exists.. cannot create link to {{pkg.path}}\bin\PSWindowsUpdate"
+} else {
+  New-Item -ItemType SymbolicLink -Path "C:\Program Files\WindowsPowerShell\Modules\PSWindowsUpdate" -Target "{{pkg.path}}\bin\PSWindowsUpdate" 
+}

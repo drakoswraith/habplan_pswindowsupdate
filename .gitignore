@@ -1,0 +1,7 @@
+packer_cache/
+sandbox/
+results/
+.vagrant/
+*.exe
+*.iso
+*.hart
